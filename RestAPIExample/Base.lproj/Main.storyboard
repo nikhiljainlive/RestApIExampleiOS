@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="RestAPIExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iwh-4i-p3Q">
+                                <rect key="frame" x="146" y="89" width="82" height="30"/>
+                                <state key="normal" title="LOG IN"/>
+                                <connections>
+                                    <action selector="onLogInPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Tbi-gl-nWt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AK5-4w-XF9">
+                                <rect key="frame" x="156" y="135" width="62" height="30"/>
+                                <state key="normal" title="LOGOUT"/>
+                                <connections>
+                                    <action selector="onLogoutPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Z7v-zg-5ME"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6KC-FL-aUb">
+                                <rect key="frame" x="146" y="51" width="82" height="30"/>
+                                <state key="normal" title="GET USERS"/>
+                                <connections>
+                                    <action selector="onGetPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8fM-Gh-sRK"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Iwh-4i-p3Q" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="146" id="DhD-U0-F6k"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6KC-FL-aUb" secondAttribute="trailing" constant="147" id="Fub-57-agh"/>
+                            <constraint firstItem="AK5-4w-XF9" firstAttribute="top" secondItem="Iwh-4i-p3Q" secondAttribute="bottom" constant="16" id="NG5-qr-VCb"/>
+                            <constraint firstItem="6KC-FL-aUb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="31" id="TMw-4o-qGE"/>
+                            <constraint firstItem="Iwh-4i-p3Q" firstAttribute="top" secondItem="6KC-FL-aUb" secondAttribute="bottom" constant="8" id="UAu-aw-3Mx"/>
+                            <constraint firstItem="6KC-FL-aUb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="146" id="Weq-wX-ybe"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Iwh-4i-p3Q" secondAttribute="trailing" constant="147" id="ecn-6T-qfG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="AK5-4w-XF9" secondAttribute="bottom" constant="502" id="f5f-Jx-KLT"/>
+                            <constraint firstItem="AK5-4w-XF9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="156" id="mLF-O7-GQT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="AK5-4w-XF9" secondAttribute="trailing" constant="157" id="pgz-x5-6CK"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="92.203898050974516"/>
+        </scene>
+    </scenes>
+</document>
